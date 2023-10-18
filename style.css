@@ -1,0 +1,130 @@
+*{
+  padding:  0;
+  margin:  0;
+  box-sizing:  border-box;
+  font-family: 'NTR', sans-serif;
+}
+
+
+body {
+  width:  100%;
+  min-height:  100vh;
+  display:  flex;
+  justify-content:  center;
+  align-items:  center;
+  background: rgb(52,52,52);
+background: radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(46,46,46,1) 41%, rgba(14,14,14,1) 95%);
+}
+
+.box{
+  background: transparent;
+  display:  flex;
+  flex-flow:  row wrap;
+  justify-content:  space-evenly;
+  align-items:  center ;
+  gap:  60px;
+  padding:  50px 0;
+}
+
+.card{
+  background : #111;
+  width: 360px;
+  height:  470px;
+  display:  grid ;
+  grid-template-rows:  50% 50%;
+  box-shadow:  5px 5px 10px rgba(0, 0, 0, .6);
+  border-radius:  15px;
+  transition : .3s ease-out;
+}
+
+.first{
+  background:  linear-gradient(transparent 0%, transparent 80% , #111 100%) , url('0.jpg');
+   background-size: cover;
+  overflow:  hidden;
+  border-top-left-radius : 15px;
+  border-top-right-radius : 15px;
+  
+}
+
+.second{
+  background: linear-gradient(transparent 0%, transparent 90% , #111 100%), url('1.jpg');
+   background-size: cover;
+  overflow:  hidden;
+  border-top-left-radius : 15px;
+  border-top-right-radius : 15px; 
+}
+
+.last{
+  background: linear-gradient(transparent 0%, transparent 90% , #111 100%), url('2.jpg');
+  background-size: cover;
+  overflow:  hidden;
+  border-top-left-radius : 15px;
+  border-top-right-radius : 15px;  
+}
+
+.text{
+  margin: 4%;
+  text-align:  center ;
+  font-size:  1.1rem;
+  letter-spacing:  1.5px;
+  overflow:  hidden;
+  font-weight:  bold;
+  color:  #fff;
+}
+
+.text h2{
+  text-transform: uppercase;
+}
+
+
+.card:hover{
+  transform:scale(1.1);
+  animation: rotate  4s linear infinite;
+  box-shadow:  0 0 8px 3px #76B9F6,
+               0 0 8px 3px #F676E5;
+
+} 
+
+@keyframes rotate {
+  0%{
+    filter:  hue-rotate(0deg);
+  }
+  
+  100%{
+    filter:  hue-rotate( 360deg);
+  }
+}
+
+@media (max-width:768px) {
+.card{
+  width: 320px;
+  height:  420px;
+}
+
+.text{
+  font-size: 1rem;
+}
+
+}
+
+@media (max-width:480px) {
+.card{
+  width: 260px;
+  height:  340px;
+}
+
+.text{
+  font-size: .75rem;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
