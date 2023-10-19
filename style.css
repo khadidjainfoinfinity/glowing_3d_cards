@@ -78,7 +78,6 @@ background: radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(46,46,46,1) 41%, r
 
 
 .card:hover{
-  transform:scale(1.1);
   animation: rotate  4s linear infinite;
   box-shadow:  0 0 8px 3px #76B9F6,
                0 0 8px 3px #F676E5;
@@ -97,12 +96,12 @@ background: radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(46,46,46,1) 41%, r
 
 @media (max-width:768px) {
 .card{
-  width: 320px;
-  height:  420px;
+  width: 300px;
+  height:  400px;
 }
 
 .text{
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 }
@@ -118,6 +117,8 @@ background: radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(46,46,46,1) 41%, r
 }
   
 }
+
+
 
 
 
